@@ -40,7 +40,52 @@
         </div>
     </nav>
 
-    <!-- content: -->
+    <div class="container">
+        <form method="get">
+            <h1 class="text-center mt-4 mb-4">Formulario para pedido personalizado</h1>
+            <div class="mb-3">
+                <label class="form-label">Sabor del pastel</label>
+                <select class="form-select" required>
+                    <option disabled selected>Selecciona el sabor</option>
+                    <option value="1">Chocolate</option>
+                    <option value="2">Fresa</option>
+                    <option value="3">Vainilla</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="form-label">Adorno del pastel</label>
+                <select class="form-select" required>
+                    <option disabled selected>Selecciona el adorno</option>
+                    <option value="1">Queso crema</option>
+                    <option value="2">Chocolate fundido</option>
+                    <option value="3">Glaseado</option>
+                    <option value="4">Merengue</option>
+                    <option value="5">Betún</option>
+                    <option value="6">Fondant</option>
+                    <option value="7">Crema de avellanas</option>
+                </select>
+            </div>
+            <div class="form-floating mb-4">
+                <input type="text" class="form-control" placeholder="Juan Perez" required>
+                <label>Nombre</label>
+            </div>
+            <div class="form-floating mb-4">
+                <input type="number" class="form-control" placeholder="Teléfono" required>
+                <label>Teléfono</label>
+            </div>
+            <div class="form-floating mb-4">
+                <input type="email" class="form-control" placeholder="example@another.example" required>
+                <label>Correo electrónico</label>
+            </div>
+            <div class="input-group mb-4">
+                <span class="input-group-text">Descripción del pastel</span>
+                <textarea class="form-control" aria-label="With textarea" placeholder="Si necesitas algún decorado especial o combinar sabores, puedes agregarlo aquí"></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn mb-3 w-25" style="background-color: #E4105A; font-weight: bold; letter-spacing: 2px; color: white;">Enviar</button>
+            </div>
+        </form>
+    </div>
 
     <footer class="text-center text-white mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
         <a class="btn btn-link btn-lg text-dark m-1" href="https://twitter.com/habacucsoto" role="button"
