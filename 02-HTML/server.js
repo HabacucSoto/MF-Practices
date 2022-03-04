@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 
 // Puerto
-const port = process.env.port || 8080
+const PORT = process.env.PORT || 8080
 
 // obtiene la ruta del directorio publico donde se encuentran los elementos estaticos (css, js).
 var publicPath = path.resolve(__dirname, 'public'); //path.join(__dirname, 'public'); también puede ser una opción
@@ -25,4 +25,4 @@ app.get('/administrador', function(req, res){
     res.sendFile(__dirname + '/public/admin.html');
 });
 
-app.listen(port)
+app.listen(PORT)
